@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: Inter, sans-serif;
+    min-height: 100vh;
+}
+
+#index {
+    font-family: Inter, sans-serif;
+    background: linear-gradient(180deg, #fafafa 41%, #fff 20%);
+}
+
+#candidates {
+    font-family: Inter, sans-serif;
+    min-height: 100vh;
+}
+
+#hr1 {
+    font-family: Inter, sans-serif;
+    border-top: 2px dashed black;
+}
+
+#login {
+    font-family: Inter, sans-serif;
+    background: linear-gradient(90deg, #fff 30%,  #fafafa 20%);
+    min-height: 100vh;
+}
+
+#vote {
+    font-family: Inter, sans-serif;
+    min-height: 100vh;
+}
+
+#result {
+    font-family: Inter, sans-serif;
+    background: linear-gradient(180deg,#fff 45% , #fafafa 10%);
+    min-height: 100vh;
+}
+
+#doublecheck {
+    background: url(/assets/pictures/square9.png);
+    background-size: 60%;
+}

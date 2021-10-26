@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Voting Online</title>
+</head>
+<body>
+    <div id="result">
+        <div class="absolute top-0 left-1/4">
+            <img src="../assets/pictures/square8.png" alt="Square 1" class="w-3/5">
+        </div>
+        <div class="container mx-auto pt-12 2xl:pt-24 pb-1 px-32 mt-16">
+            <div class="flex justify-end">
+                <a href="#"><img src="../assets/pictures/next.png" alt="Next" class="hover:scale-105 transform transition-all cursor-pointer"></a>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <h1 class="text-5xl font-bold mb-6">Thanks for your <span class="text-red-600">participation</span>!</h1>
+                    <p class="text-md font-light">We will wait until the election done.</p>
+                    <div class="flex border mt-24 mb-4 p-6 2xl:p-8 w-1/3 h-1/6 rounded-lg mx-8 bg-white">
+                        <h1 class="text-red-600 text-3xl font-bold 2xl:text-4xl">1250 &nbsp;</h1>
+                        <p class="text-md 2xl:text-lg text-gray-300 mt-3">/&nbsp;5600</p>
+                    </div>
+                    <p>Vote have been entered.</p>
+                </div>
+                <div class="overflow-hidde">
+                    <canvas class="p-10 " id="chartDoughnut"></canvas>
+                  </div>
+                <p>*We serve the realtime result.</p>
+            </div>
+        </div>
+    </div>
+
+<!-- Required chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- Chart doughnut -->
+<script>
+
+  const dataDoughnut = {
+    datasets: [{
+      label: 'My First Dataset',
+      data: [12.5, 100],
+      backgroundColor: [
+        'rgba(225,37,0,255)',
+        'rgba(207,216,220,255)',
+      ],
+      hoverOffset: 4,
+      hoverBackgroundColor: [        
+      'rgba(225,37,0,255)',
+      'rgba(207,216,220,255)'
+      ],
+    }]
+  };
+
+  const configDoughnut = {
+    type: 'doughnut',
+    data: dataDoughnut,
+    options: {}
+  };
+
+
+  var chartBar = new Chart(
+    document.getElementById('chartDoughnut'),
+    configDoughnut
+  );
+</script>
+</body>
+</html>
