@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../transition.css"/>
     <title>Voting Online</title>
 </head>
 <body>
@@ -13,14 +14,14 @@
         <div class="absolute bg-repeat w-full h-1/4 top-0" style="background-image: url(../assets/pictures/square9.png);"></div>
         <div class="container mx-auto pb-1 px-32 mt-16 space-y-10">
             <div class="relative flex justify-center">
-                <img src="../assets/pictures/circle2.png" alt="Circle" class="w-1/5">
+                <img src="../assets/pictures/circle2.png" alt="Circle" class="w-1/5 animate__animated animate__fadeIn">
                 <div class="absolute top-1/3">
-                    <img src="../assets/pictures/group24.png" alt="Cross" class="2xl:scale-150 transform">
+                    <img src="../assets/pictures/group24.png" alt="Cross" class="2xl:scale-150 transform animate__animated animate__zoomIn">
                 </div>
             </div>
-            <h1 class="text-7xl font-bold text-center">Oops!</h1>
-            <h2 class="text-2xl text-center">You haven't voted yet, please choose one candidate.</h2>
-            <div class="flex justify-center">
+            <h1 class="text-7xl font-bold text-center animate__animated animate__zoomIn">Oops!</h1>
+            <h2 class="text-2xl text-center animate__animated animate__fadeInDown">You haven't voted yet, please choose one candidate.</h2>
+            <div class="flex justify-center animate__animated animate__fadeInUp ">
                 <a href="vote.html"><button class="py-2 px-10 font-bold text-xl rounded-lg bg-red-100 text-red-600 hover:bg-red-300 hover:scale-110 transform transition-all cursor-pointer">Okay</button></a>
             </div>
         </div>

@@ -45,3 +45,5 @@ body {
     background: url(/assets/pictures/square9.png);
     background-size: 60%;
 }
+
+:root{--animate-duration:1s;--animate-delay:1s;--animate-repeat:1}

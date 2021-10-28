@@ -6,40 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../transition.css"/>
     <title>Voting Online</title>
 </head>
     <body>
         <div id="login">
             <div class="absolute right-1/4 top-0">
-                <img src="../assets/pictures/square4.png" alt="Square 4" class="w-4/5 2xl:w-full">
+                <img src="../assets/pictures/square4.png" alt="Square 4" class="w-4/5 2xl:w-full animate__animated animate__fadeIn">
             </div>
             <div class="absolute right-1/4 bottom-0">
-                <img src="../assets/pictures/square5.png" alt="Square 5" class="w-4/5 2xl:w-full">
+                <img src="../assets/pictures/square5.png" alt="Square 5" class="w-4/5 2xl:w-full animate__animated animate__fadeIn">
             </div>
             <div class="container mx-auto pt-24 pb-1 px-32">
                 <div>
-                    <a href="index.html" class="flex space-x-10">
+                    <a href="../index.html" class="flex space-x-10">
                         <img src="../assets/pictures/back.png" alt="Back" class="cursor-pointer">
                         <p class="mt-2 cursor-pointer">back to home</p>
                     </a>
                 </div>
                 <div class="grid grid-cols-2 mt-12 2xl:mt-32">
-                    <div class="space-y-8 2xl:space-y-10">
+                    <div class="space-y-8 2xl:space-y-10 animate__animated animate__fadeInLeft">
                         <h1 class="text-7xl font-bold 2xl:w-2/3">Vote your <span class="text-red-600 font-bold">best leader!</span></h1>
                         <p class="font-light w-4/5">After you complete the steps, this is the perfect time to choose your leader. Goodluck!</p>
                         <p class="italic font-light">Please to be wise voter!</p>
                     </div>
                     <div class="ml-20 2xl:ml-32">
                         <form action="vote.html" class="space-y-4">
-                            <label class="block tracking-wide text-xl font-bold mb-2">
+                            <label class="block tracking-wide text-xl font-bold mb-2 animate__animated animate__fadeInDown">
                                 Login
                             </label>
-                            <input class="appearance-none block w-3/5  text-black border bg-gray-100 border-black rounded-lg py-3 px-8 leading-tight focus:outline-none focus:bg-white transition-all" type="email" placeholder="Jane">
-                            <label class="block tracking-wide text-xl font-bold">
+                            <input class="appearance-none block w-3/5  text-black border bg-gray-100 border-black rounded-lg py-3 px-8 leading-tight focus:outline-none focus:bg-white transition-all animate__animated animate__fadeInDown animate__delay-1s" type="email" placeholder="Jane">
+                            <label class="block tracking-wide text-xl font-bold animate__animated animate__fadeInDown">
                                 Password
                             </label>
-                            <input class="appearance-none block w-3/5  text-black border bg-gray-100 border-black rounded-lg py-3 px-8 leading-tight focus:outline-none focus:bg-white transition-all" type="password" placeholder="*****"><img src="../assets/pictures/Eye.png" alt="Eye" class="hidden"><br />
-                            <button class="py-4 w-3/5 rounded-lg bg-red-200 cursor-pointer flex justify-center hover:bg-red-300 transition-all"><img src="../assets/pictures/vote_now.png" alt="Vote Now"></button>
+                            <input class="appearance-none block w-3/5  text-black border bg-gray-100 border-black rounded-lg py-3 px-8 leading-tight focus:outline-none focus:bg-white transition-all animate__animated animate__fadeInDown animate__delay-1s" type="password" placeholder="*****"><img src="../assets/pictures/Eye.png" alt="Eye" class="hidden"><br />
+                            <button class="py-4 w-3/5 rounded-lg bg-red-200 cursor-pointer flex justify-center hover:bg-red-300 transition-all animate__animated animate__fadeInUp animate__delay-2s"><img src="../assets/pictures/vote_now.png" alt="Vote Now"></button>
                         </form>
                     </div>
                 </div>

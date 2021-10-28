@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../transition.css"/>
     <title>Voting Online</title>
 </head>
 <body>
     <div class="overflow-hidden" id="doublecheck">
         <div class="container mx-auto pb-1 px-80 mt-24 space-y-10">
-            <h1 class="text-7xl font-bold text-center">Are you sure with your answer?</h1>
-            <h2 class="text-2xl text-center">All participant only can vote 1 time</h2>
-            <div class="flex justify-center space-x-10">
+            <h1 class="text-7xl font-bold text-center animate__animated animate__fadeInDown">Are you sure with your answer?</h1>
+            <h2 class="text-2xl text-center animate__animated animate__fadeInDown">All participant only can vote 1 time</h2>
+            <div class="flex justify-center space-x-10 animate__animated animate__fadeInUp">
                 <a href="vote.html"><button class="py-2 px-6 bg-white border border-gray-300 text-gray-300 text-xl rounded-lg hover:bg-gray-400 hover:text-black hover:scale-110 transform transition-all cursor-pointer">I'm not sure</button></a>
                 <a href="result.html"><button class="py-2 px-6 font-bold text-xl rounded-lg bg-red-100 text-red-600 hover:bg-red-300 hover:scale-110 transform transition-all cursor-pointer">Absolutely yes!</button></a>
             </div>
